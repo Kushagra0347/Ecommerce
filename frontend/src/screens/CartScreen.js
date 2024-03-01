@@ -69,7 +69,7 @@ function CartScreen({ match, location, history }) {
                       {cartItem.name}
                     </Link>
                   </Col>
-                  <Col md={2}>${cartItem.price}</Col>
+                  <Col md={2}>₹{cartItem.price}</Col>
                   <Col md={3}>
                     <Form.Control
                       as='select'
@@ -111,7 +111,7 @@ function CartScreen({ match, location, history }) {
                 {cartItems.reduce((acc, item) => acc + Number(item.qty), 0)})
                 items
               </h2>
-              $
+              ₹
               {cartItems
                 .reduce((acc, item) => acc + Number(item.qty) * item.price, 0)
                 .toFixed(2)}

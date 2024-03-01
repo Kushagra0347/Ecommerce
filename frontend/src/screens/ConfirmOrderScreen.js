@@ -164,7 +164,7 @@ function ConfirmOrderScreen({ match }) {
                             </Col>
 
                             <Col md={4}>
-                              {orderItem.quantity} X ${orderItem.price} = $
+                              {orderItem.quantity} X ₹{orderItem.price} = ₹
                               {(orderItem.quantity * orderItem.price).toFixed(
                                 2,
                               )}
@@ -188,28 +188,28 @@ function ConfirmOrderScreen({ match }) {
                 <ListGroup.Item>
                   <Row>
                     <Col>Items: </Col>
-                    <Col>${order.itemsPrice}</Col>
+                    <Col>₹{order.itemsPrice}</Col>
                   </Row>
                 </ListGroup.Item>
 
                 <ListGroup.Item>
                   <Row>
                     <Col>Shipping: </Col>
-                    <Col>${order.shipping_price}</Col>
+                    <Col>₹{order.shipping_price}</Col>
                   </Row>
                 </ListGroup.Item>
 
                 <ListGroup.Item>
                   <Row>
                     <Col>Tax: </Col>
-                    <Col>${order.tax_price}</Col>
+                    <Col>₹{order.tax_price}</Col>
                   </Row>
                 </ListGroup.Item>
 
                 <ListGroup.Item>
                   <Row>
                     <Col>Total: </Col>
-                    <Col>${order.total_price}</Col>
+                    <Col>₹{order.total_price}</Col>
                   </Row>
                 </ListGroup.Item>
 

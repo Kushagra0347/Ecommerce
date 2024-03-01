@@ -20,7 +20,7 @@ function Product({ product }) {
             height: "100%",
             width: "100%",
             backgroundImage: `url("${product.image}")`,
-            backgroundSize: "contain",
+            backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}></div>
@@ -44,7 +44,7 @@ function Product({ product }) {
         </Card.Text>
 
         <Card.Text as='h3' className='h-100'>
-          ${product.price}
+          ₹{product.price}
         </Card.Text>
       </Card.Body>
     </Card>

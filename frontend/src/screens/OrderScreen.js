@@ -113,7 +113,7 @@ function OrderScreen({ history }) {
                           </Col>
 
                           <Col md={4}>
-                            {cartItem.qty} X ${cartItem.price} = $
+                            {cartItem.qty} X ₹{cartItem.price} = ₹
                             {(cartItem.qty * cartItem.price).toFixed(2)}
                           </Col>
                         </Row>
@@ -135,28 +135,28 @@ function OrderScreen({ history }) {
               <ListGroup.Item>
                 <Row>
                   <Col>Items: </Col>
-                  <Col>${cart.itemsPrice}</Col>
+                  <Col>₹{cart.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping: </Col>
-                  <Col>${cart.shippingPrice}</Col>
+                  <Col>₹{cart.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Tax: </Col>
-                  <Col>${cart.taxPrice}</Col>
+                  <Col>₹{cart.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Total: </Col>
-                  <Col>${cart.totalPrice}</Col>
+                  <Col>₹{cart.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
 

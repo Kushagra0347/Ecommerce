@@ -8,14 +8,21 @@ import Product from "../components/Product";
 import { listProducts } from "../actions/productActions";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
+import { useState } from "react";
 
 function HomeScreen() {
   const dispatch = useDispatch();
+  // let categories = new Set();
+
   const productList = useSelector((state) => state.productList);
   const { error, loading, products } = productList;
   useEffect(() => {
     dispatch(listProducts());
+
+    // products.map((product) => console.log(product.category));
   }, [dispatch]);
+
+  // console.log(categories);
 
   return (
     <div>
